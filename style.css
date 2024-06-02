@@ -1,0 +1,473 @@
+:root {
+  --color-primary: #5ec576;
+  --color-secondary: #ffcb03;
+  --color-tertiary: #ff585f;
+  --color-primary-darker: #4bbb7d;
+  --color-secondary-darker: #ffbb00;
+  --color-tertiary-darker: #fd424b;
+  --color-primary-opacity: #5ec5763a;
+  --color-secondary-opacity: #ffcd0331;
+  --color-tertiary-opacity: #ff58602d;
+  --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+  --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+  background-color: #f3f3f3;
+  background-color: #37383d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #f3f3f3; */
+}
+
+.forSectionPadding {
+  padding: 2rem 4.9rem;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+html {
+  font-size: 100%;
+}
+
+/* ******************** SECTION ONE********************* */
+
+.logoAndMainLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  z-index: 100;
+}
+
+.logoAndMainLink.sticky {
+  position: fixed;
+  background-color: #ffffff;
+  padding: 0 2rem;
+}
+
+.developerName {
+  font-family: Dancing Script;
+  color: #4bbb7d;
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.developerName:hover {
+  margin-bottom: 2rem;
+  /* text-decoration: underline #fd424b; */
+  border-bottom: solid 0.1px #ffb003;
+  /* z-index: 10; */
+}
+/* % */
+
+.authorLogo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* font-weight: 500; */
+}
+.mainLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+ul,
+li,
+.link {
+  list-style: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: Poppins;
+  color: #37383d;
+  text-transform: capitalize;
+}
+
+ul,
+li,
+.link:hover {
+  color: #5ec576;
+}
+/* *********** GENERAL *********** */
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+/* ******************** GREETINGS SECTION ********************* */
+.greetingSection {
+  padding-top: 4rem;
+}
+.greetingsParagraph {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ffb003;
+}
+
+.headingOne {
+  margin: 1rem 0 0.7rem 0;
+  font-family: Poppins;
+  color: #888;
+  text-transform: capitalize;
+  line-height: 60px;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.headingsupport {
+  font-family: Poppins;
+  font-size: 3.2rem;
+  color: #666;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+.supportingWord {
+  font-size: 20px;
+  font-family: Poppins;
+  /* color: #999; */
+  color: #37383d;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: 14px;
+}
+
+hr {
+  border: none;
+  border-top: 3px double #4bbb7d;
+  overflow: visible;
+  margin: 7rem 0;
+  color: red;
+}
+
+/* ******************** ABOUT ME SECTION ********************* */
+/* .aboutMe {
+  padding-top: 4rem;
+} */
+
+.allHeading {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: Poppins;
+  font-size: 3rem;
+  color: #5ec576;
+  text-transform: capitalize;
+  line-height: 40px;
+}
+
+.explanationAndPhoto {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  gap: 2rem;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.explanationWord {
+  background-color: #37383d;
+  border-radius: 12px;
+  padding: 1rem 1.4rem;
+}
+
+.aboutWord {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 28px;
+}
+
+.aboutPhoto {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+/* ******************** SKILLS SECTION ********************* */
+
+.skillsHeading {
+  margin-bottom: 2.4rem;
+}
+
+.trialSkills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.htmlEplanationDiv {
+  border-radius: 12px;
+  padding: 1rem 1.7rem;
+  background-color: #0d2c4a;
+}
+
+.allInOne {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.htmlLogo {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.skillsTitle {
+  display: flex;
+  justify-content: flex-start;
+  font-family: Poppins;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  /* color: #5ec576; */
+  /* color: #ff5722; */
+  color: #ffbb00;
+}
+
+.explanation {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+/* ******************** EXPERIENCE SECTION ********************* */
+.experienceSection {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
+  /* animation: fadeIn 3s ease-in-out; */
+}
+
+/* @keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+} */
+
+.headingExperience {
+  display: flex;
+  justify-content: center;
+  font-family: Poppins;
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  color: #ffcb03;
+  line-height: 40px;
+  margin-bottom: 1.4rem;
+  font-weight: 600;
+}
+
+.intershipHeading {
+  font-family: Poppins;
+  font-size: 1.6rem;
+  color: #10375c;
+  line-height: 40px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.headingRole {
+  font-family: Poppins;
+  font-size: 1rem;
+  color: #39b385;
+  line-height: 27px;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.spanRole {
+  font-family: poppins;
+  color: #ffcb03;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.internExplanation {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  color: #666;
+  line-height: 25px;
+  margin-bottom: 1rem;
+}
+
+.defineTerm {
+  font-family: poppins;
+  font-size: 1rem;
+  color: #37383d;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 7px;
+}
+
+.defineDescription {
+  font-family: Poppins;
+  font-size: 14px;
+  color: #666;
+  font-weight: 400;
+  margin-left: 2.3rem;
+}
+
+.conludeExplanation {
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 27px;
+  /* color: #333; */
+  color: #0d2c4a;
+  margin-top: 0.7rem;
+  font-weight: 600;
+}
+
+.experienceSection:hover {
+  border: 1px solid #9be15d;
+  border-style: ridge;
+}
+
+/* ******************** PROJECT  SECTION ********************* */
+.heading--section {
+  display: flex;
+  justify-content: center;
+  font-family: Poppins;
+  font-size: 2.2rem;
+  line-height: 50px;
+  color: #5ec576;
+  font-weight: 500;
+  margin-bottom: 1.1rem;
+}
+
+.slider {
+  position: relative;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 65rem;
+  height: 30rem;
+  margin: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+/* .slide.active {
+  opacity: 1;
+} */
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30rem;
+
+  /* display: flex;
+  justify-content: center; */
+  padding: 0.7rem 1.4rem;
+}
+
+.headingSlideContent {
+  font-family: poppins;
+  font-size: 1.9rem;
+  color: #37383d;
+  font-weight: 600;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.slideContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.portfolioExplanation {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 15.4px;
+  color: #666;
+  line-height: 24px;
+  margin-bottom: 10rem;
+}
+
+.portfolioLinkWord {
+  font-family: poppins;
+  font-size: 19px;
+  color: #37383d;
+  text-decoration: none;
+  /* margin-top: 10rem; */
+  background-color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 6px;
+}
+
+.portfolioLinkWord:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolioImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 90%;
+  z-index: 10;
+
+  border: none;
+  background-color: #10375c;
+  font-family: inherit;
+  color: #f3f3f3;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  font-size: 2.25rem;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.slider__btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
+}
+
+/* ********************  CONTACT  SECTION ********************* */
+.contactSection {
+  background-color: #37383d;
+  padding: 0 4.9rem;
+}
+.section--words {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: poppins;
+  font-size: 18px;
+  color: #f9f9f9;
+  line-height: 30px;
+  font-weight: 400;
+  padding: auto 2rem;
+}
